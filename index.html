@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" href="img/profile2.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+    <header>
+        <div class="logo">POW3R.</div>
+        <nav>
+            <ul>
+                <li><a href="#about">O MNIE</a></li>
+                <li><a href="#projects">PROJEKTY</a></li>
+                <li><a href="#contact">KONTAKT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="about" class="content">
+        <div class="text">
+            <h2>O MNIE</h2>
+            <h1>Cześć, tu <span class="highlight">Bartek</span><br><span>Student III roku</span> Informatyki</h1>
+            <p>Mam <span class="highlight">21 lat</span> i mieszkam w Starym Mieście koło Konina/Poznaniu. Jestem studentem na 
+                <span class="highlight">Politechnice Poznańskiej</span>,
+                z zamiłowaniem do technologii i jej praktycznych zastosowań.<br> Moje <span class="highlight">
+                zainteresowania</span> obejmują programowanie, 
+                nowe technologie, które zmieniają nasz świat (w tym AI) oraz sport. <br>
+                Wierzę, że ciągły rozwój i zdobywanie nowych doświadczeń są <span class="highlight">kluczem do sukcesu</span>
+                w dynamicznie zmieniającym się świecie.</p>
+                <div class="buttons">
+                    <a href="https://github.com/bartosz-kozlowski" class="button" target="_blank">
+                        <img src="img/github-mark-white.png" alt="GitHub Logo" class="icon">
+                        GitHub
+                    </a>
+                    <a href="documents/Bartosz-Kozlowski-CV.pdf" class="button" download>
+                        Pobierz moje CV
+                    </a>
+                </div>
+        </div>
+        <div class="image">
+            <img src="img/profile.jpg" alt="Profile Image">
+        </div>
+    </div>
+    <div id="projects" class="projects">
+        <h2>PROJEKTY</h2>
+        <div class="wulkan">
+            <h3>Symulacja wulkanu</h3>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/r5Ir-rJ5YWE?si=deur_F3E0xri13as" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <p>Projekt wizualizacji trójwymiarowego, eksplodującego <span>wulkanu</span> na przedmiot Grafika Komputerowa i Wizualizacja. Wykorzystano OpenGL, GLM, Assimp oraz Blender.</p>
+        </div>
+        <div class="skrypty">
+            <h3>Skrypty w bashu</h3>
+            <div class="miniaturki">
+                <h4>Generowanie miniaturek</h4>
+                <img src="img/code-miniaturki.png" alt="miniaturki" class="code">
+                <p>Skrypt przyjmuje jako argument listę katalogów.
+                    Skrypt generuje dla każdego obrazu znajdującego się 
+                    bezpośrednio w podanych katalogach miniaturę o określonym rozmiarze i
+                     umieszcza ją w podkatalogu tn w katalogu w którym znajduje się obraz. Miniaturkom ustawia czasy modyfikacji,
+                     zmiany i dostępu na identyczne jak odpowiednie czasy obrazu. </p>
+            </div>
+            <div class="search">
+                <h4>Wyszukiwanie tekstu</h4>
+                <img src="img/code-search.png" alt="search" class="code">
+                <p>Rekurencyjne wyszukiwanie tekstu w katalogach
+                    Skrypt przyjmuje jako pierwszy argument wyszukiwany tekst, jako kolejne listę katalogów.
+                    Skrypt wyszukuje w plikach w podanych katalogach (rekurencyjnie) podanego tekstu. Skrypt ma wypisywać na standardowe wyjście nazwę pliku w którym znajduje się 
+                    szukany tekst. Skrypt ma nie wyświetlać komunikatów o braku dostępu do plików. </p>
+                <a href="https://github.com/bartosz-kozlowski/Systemy-Operacyjne" class="button" target="_blank">
+                    <img src="img/github-mark-white.png" alt="GitHub Logo" class="icon">
+                    Kod źródłowy</a>
+            </div>
+        </div>
+        <div class="psiw">
+            <h3>IPC Publish-Subscribe</h3>
+            <div class="ipc">
+                <p>Celem projektu była implementacja systemu przekazywania (rozgłaszania) 
+                    wiadomości do wszystkich procesów, które zasubskrybowały dany typ wiadomości
+                    (zarejestrowały się na ich odbór). Tworzona aplikacja wykorzystuje
+                    mechanizm kolejek komunikatów. W ramach realizacji projektu konieczne
+                    było opracowanie protokołu komunikacyjnego i 2 programów: klienta i 
+                    serwera. Każdy klient może wysyłać i otrzymywać wiadomości do/od pozostałych
+                    użytkowników systemu. W wymianie wiadomości pomiędzy klientami zawsze
+                    pośredniczy serwer (bezpośrednia komunikacja pomiędzy klientami jest zabroniona). 
+                    Otrzymywane wiadomości wyświetlane są na ekranie.</p>
+                <a href="https://github.com/bartosz-kozlowski/IPC-Publish-Subscribe" class="button" target="_blank">
+                    <img src="img/github-mark-white.png" alt="GitHub Logo" class="icon">
+                    Kod źródłowy</a>
+            </div>
+        </div>
+        <div class="friends">
+            <h3>PUT Friends Together Game </h3>
+            <img src="img/put-friends.png" alt="game" class="game">
+            <p>Prosta gra napisana w języku C używając biblioteki SFML. Gra polega na odwiedzaniu przyjaciół i zdobywaniu punktów, 
+                uwzględniono kolizje, dodana muzyka, którą można wyłączyć.</p>
+        </div>
+        <div class="cvrptw">
+            <h3>Problem marszrutyzacji z ograniczeniami pojemności i oknami czasowymi - optymalizacja</h3>
+            <p>Problem rozwiązano używając algorytmu GRASP oraz Tabu Search. Rozwiązanie używające algorytmu
+                Tabu Search pobiło najlepszy wynik na Politechnice Poznańskiej.</p>
+            <a href="https://github.com/bartosz-kozlowski/OK_CVRPTW" class="button" target="_blank">
+            <img src="img/github-mark-white.png" alt="GitHub Logo" class="icon">
+            Kod źródłowy</a>
+        </div>
+        <div class="cvrptwO">
+            <h3>RouteMaster App</h3>
+            <img src="img/routemaster.png" alt="app" class="app">
+            <p>Aplikacja desktopowa rozwiązująca problem marszrutyzacji. Cała aplikacja napisana obiektowo. 
+                Backend w języku C++ oraz frontend wykorzystując Qt Creator. </p>
+        </div>
+        <div class="aisd">
+            <h3>Algorytmy i Struktury Danych</h3>
+            <p>Do projektów z tego przedmiotu na studiach używałem języków C++ oraz Python.</p>
+            <a href="https://github.com/bartosz-kozlowski/AiSD" class="button" target="_blank">
+            <img src="img/github-mark-white.png" alt="GitHub Logo" class="icon">
+            Kody źródłowe projektów</a>
+        </div>
+        <div class="ask">
+            <h3>Programowanie i konstrukcja robotów opartych na mikrokontrolerach</h3>
+            <img src="img/arduino.png" alt="car1" class="vehicle">
+            <img src="img/plytkatraw.png" alt="car2" class="vehicle">
+            <p>Zrobiłem dwa pojazdy, jeden oparty na Arduino, a drugi na własnej wytrawionej płytce.</p>
+        </div>
+        <div class="others">
+            <h3>Inne projekty</h3>
+            <p>Robiłem w ramach zajęć aplikacje w Swift, proste programy w języku C, Prologu, Pythonie, C++. 
+                Znam Oracle SQL, język R do statystyki i analizy danych. Większość jest wrzucona na mojego GitHuba.</p>
+            <a href="https://github.com/bartosz-kozlowski" class="button" target="_blank">
+                <img src="img/github-mark-white.png" alt="GitHub Logo" class="icon">
+                Mój GitHub</a>
+        </div>
+    </div>
+    <div id="contact" class="contact">
+        <h2>KONTAKT</h2>
+        <p>Można się ze mną skontaktować przez e-mail: <a href="mailto:barkoz.2003@gmail.com">barkoz.2003@gmail.com</a></p>
+    </div>
+</body>
+</html>

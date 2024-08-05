@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1; /* Pozwól nawigacji na rozciąganie się */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    text-decoration: underline #bbb;
+}
+
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.text {
+    max-width: 600px;
+}
+
+.text h2 {
+    font-size: 30px;
+    color: #bbb;
+}
+
+.text h1 {
+    font-size: 48px;
+    line-height: 1.2;
+}
+
+#about {
+    margin-bottom: 60px; /* Dodaje odstęp poniżej sekcji "O MNIE" */
+}
+
+.text span {
+    color: #00aaff;
+}
+
+.text .highlight {
+    color: #ff5733; /* Kolor tekstu, np. pomarańczowy */
+    font-weight: bold; /* Pogrubienie tekstu */
+}
+
+.text p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.text .buttons {
+    display: flex;
+    justify-content: left; /* Przesuwa przyciski do prawej strony */
+    gap: 10px; /* Odstęp między przyciskami */
+    margin-top: 20px; /* Odstęp od tekstu */
+}
+
+.text .button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button img.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.text .button img.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.text .button:hover {
+    background-color: #0056b3;
+}
+
+.image {
+    max-width: 400px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animacje */
+}
+
+.image img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animacje */
+}
+
+.image:hover {
+    transform: scale(1.05); /* Powiększa kontener */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Dodaje cień po najechaniu */
+}
+
+.projects, .contact {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.projects h2, .contact h2 {
+    color: #bbb;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.projects h3, .contact h3 {
+    color: #00aaff;
+    font-size: 25px;
+    padding: 20px;
+}
+
+.projects h4 {
+    color: #ff5733;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.projects p {
+    padding: 10px;
+}
+
+.contact p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#contact {
+    margin-top: 20px; /* Dodaje odstęp poniżej sekcji "O MNIE" */
+}
+
+.wulkan span {
+    color: #ff0000;
+}
+
+.code {
+    width: 500px; /* Możesz zmienić na dowolną szerokość */
+    height: auto; /* Zachowuje proporcje obrazka */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animacje */
+    border-radius: 10px; /* Zaokrąglone rogi */
+}
+
+.code:hover {
+    transform: scale(1.05); /* Powiększenie obrazka */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Zwiększony cień po najechaniu */
+}
+
+.game {
+    width: 600px; /* Możesz zmienić na dowolną szerokość */
+    height: auto; /* Zachowuje proporcje obrazka */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animacje */
+    border-radius: 10px; /* Zaokrąglone rogi */
+}
+
+.game:hover {
+    transform: scale(1.05); /* Powiększenie obrazka */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Zwiększony cień po najechaniu */
+}
+
+.app {
+    width: 600px; /* Możesz zmienić na dowolną szerokość */
+    height: auto; /* Zachowuje proporcje obrazka */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animacje */
+    border-radius: 10px; /* Zaokrąglone rogi */
+}
+
+.app:hover {
+    transform: scale(1.05); /* Powiększenie obrazka */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Zwiększony cień po najechaniu */
+}
+
+.vehicle {
+    width: 30%;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animacje */
+    border-radius: 10px; /* Zaokrąglone rogi */
+}
+
+.vehicle:hover {
+    transform: scale(1.05); /* Powiększenie obrazka */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Zwiększony cień po najechaniu */
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
