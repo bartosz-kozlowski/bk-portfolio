@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
 
 body {
     font-family: Arial, sans-serif;
@@ -53,9 +53,9 @@ nav a:hover {
     text-decoration: underline #bbb;
 }
 
-
 .content {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 40px;
@@ -98,7 +98,7 @@ nav a:hover {
 
 .text .buttons {
     display: flex;
-    justify-content: left; /* Przesuwa przyciski do prawej strony */
+    justify-content: left; /* Przesuwa przyciski do lewej strony */
     gap: 10px; /* Odstęp między przyciskami */
     margin-top: 20px; /* Odstęp od tekstu */
 }
@@ -255,4 +255,48 @@ nav a:hover {
     display: flex;
     justify-content: center;
     margin: 0px 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .content {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .image {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .projects .wulkan, .projects .skrypty, .projects .psiw, .projects .friends, .projects .cvrptw, .projects .cvrptwO, .projects .aisd, .projects .ask, .projects .others {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .video iframe, .code, .game, .vehicle, .app {
+        width: 100%;
+        height: auto;
+    }
+
+    .text .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button {
+        margin: 10px 0;
+    }
 }
