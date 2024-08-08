@@ -49,27 +49,31 @@
             <div class="video">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/r5Ir-rJ5YWE?si=deur_F3E0xri13as" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-            <p>Projekt wizualizacji trójwymiarowego, eksplodującego wulkanu na przedmiot Grafika Komputerowa i Wizualizacja. Wykorzystano OpenGL, GLM, Assimp oraz Blender. 
-                Użyto autorski system cząsteczek do dymu i lawy, fizykę lawy opadającej oraz kamienia zrobiono używając rzutu ukośnego.</p>
+            <p>Projekt polegał na stworzeniu zaawansowanej wizualizacji trójwymiarowego, eksplodującego wulkanu, który został zaprezentowany w ramach przedmiotu Grafika Komputerowa i Wizualizacja. 
+                W realizacji wykorzystano narzędzia i technologie, takie jak OpenGL, GLM, Assimp oraz Blender.
+                Użyto autorski system cząsteczek do dymu i lawy. W fizyce lawy i opadających kamieni zastosowano technikę rzutu ukośnego, 
+                co pozwoliło na realistyczne odwzorowanie ruchu i interakcji tych elementów w przestrzeni 3D.</p>
         </div>
         <div class="skrypty">
             <h3>Skrypty w bashu</h3>
             <div class="miniaturki">
                 <h4>Generowanie miniaturek</h4>
                 <img src="img/code-miniaturki.png" alt="miniaturki" class="code">
-                <p>Skrypt przyjmuje jako argument listę katalogów.
-                    Skrypt generuje dla każdego obrazu znajdującego się 
-                    bezpośrednio w podanych katalogach miniaturę o określonym rozmiarze i
-                     umieszcza ją w podkatalogu tn w katalogu w którym znajduje się obraz. Miniaturkom ustawia czasy modyfikacji,
-                     zmiany i dostępu na identyczne jak odpowiednie czasy obrazu. </p>
+                <p>Skrypt przyjmuje listę katalogów jako argument i przetwarza obrazy znajdujące 
+                    się bezpośrednio w tych katalogach. Dla każdego obrazu tworzy miniaturę o określonym rozmiarze, 
+                    którą umieszcza w podkatalogu o nazwie tn w tym samym katalogu co oryginalny plik. 
+                    Dodatkowo, skrypt synchronizuje czasy modyfikacji, zmiany i dostępu 
+                    miniatur z odpowiednimi czasami oryginalnych obrazów, zapewniając zgodność metadanych 
+                    i uporządkowanie plików.</p>
             </div>
             <div class="search">
                 <h4>Wyszukiwanie tekstu</h4>
                 <img src="img/code-search.png" alt="search" class="code">
                 <p>Rekurencyjne wyszukiwanie tekstu w katalogach.
-                    Skrypt przyjmuje jako pierwszy argument wyszukiwany tekst, jako kolejne listę katalogów.
-                    Skrypt wyszukuje w plikach w podanych katalogach (rekurencyjnie) podanego tekstu. Skrypt ma wypisywać na standardowe wyjście nazwę pliku w którym znajduje się 
-                    szukany tekst. Skrypt ma nie wyświetlać komunikatów o braku dostępu do plików. </p>
+                    Skrypt przyjmuje jako pierwszy argument tekst do wyszukania oraz 
+                    listę katalogów jako kolejne argumenty. Przeszukuje pliki w tych katalogach rekurencyjnie, 
+                    aby znaleźć podany tekst. Wypisuje ścieżki do plików zawierających szukany tekst na standardowe wyjście, 
+                    bez wyświetlania komunikatów o braku dostępu do plików. </p>
                 <a href="https://github.com/bartosz-kozlowski/Systemy-Operacyjne" class="button" target="_blank">
                     <img src="img/github-mark-white.png" alt="GitHub Logo" class="icon">
                     Kod źródłowy</a>
@@ -95,8 +99,10 @@
         <div class="friends">
             <h3>PUT Friends Together Game </h3>
             <img src="img/put-friends.png" alt="game" class="game">
-            <p>Prosta gra napisana w języku C używając biblioteki SFML. Gra polega na odwiedzaniu przyjaciół i zdobywaniu punktów, 
-                uwzględniono kolizje, jest również dodana muzyka, którą można wyłączyć.</p>
+            <p>Prosta gra przygodowa napisana w języku C używając biblioteki SFML. Gra polega na odwiedzaniu przyjaciół i zdobywaniu punktów, 
+                uwzględniono mechanikę kolizji. Zawiera ścieżkę dźwiękową, której odtwarzanie można w każdej chwili włączyć lub wyłączyć.
+                Po zdobyciu wymaganej liczby punktów pojawia się jumpscare z krzykiem (nawiązanie do gry "Straszny labirynt"),
+                nastepnie można kontynuować dalej grę. </p>
         </div>
         <div class="cvrptw">
             <h3>Problem marszrutyzacji z ograniczeniami pojemności i oknami czasowymi - optymalizacja</h3>
@@ -110,12 +116,16 @@
         <div class="cvrptwO">
             <h3>RouteMaster App</h3>
             <img src="img/routemaster.png" alt="app" class="app">
-            <p>Aplikacja desktopowa rozwiązująca problem marszrutyzacji. Cała aplikacja napisana obiektowo. 
-                Backend w języku C++ oraz frontend wykorzystując Qt Creator. </p>
+            <p>Aplikacja desktopowa rozwiązująca problem marszrutyzacji, który dotyczy spedytorów. 
+             Została stworzona w paradygmacie programowania obiektowego. Backend w języku C++ oraz frontend przy użyciu Qt Creator. </p>
         </div>
         <div class="aisd">
             <h3>Algorytmy i Struktury Danych</h3>
-            <p>Do projektów z tego przedmiotu na studiach używałem języków C++ oraz Python.</p>
+            <p>Do projektów z tego przedmiotu na studiach używałem języków C++ oraz Python. Zadania polegały na implementacji
+                różnych sortowań, złożonych struktur danych, algorytmów grafowych, algorytmów z powracaniem: cykl Eulera i Hamiltona,
+                oraz problemu plecakowego.
+
+            </p>
             <a href="https://github.com/bartosz-kozlowski/AiSD" class="button" target="_blank">
             <img src="img/github-mark-white.png" alt="GitHub Logo" class="icon">
             Kody źródłowe projektów</a>
