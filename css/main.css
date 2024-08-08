@@ -50,7 +50,9 @@ nav a {
 }
 
 nav a:hover {
-    text-decoration: underline #bbb;
+    color: #ff5733; /* Pomarańczowy kolor tekstu */
+    text-decoration: underline; /* Podkreślenie tekstu */
+    font-weight: bold; /* Pogrubiony tekst */
 }
 
 .content {
