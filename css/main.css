@@ -377,7 +377,7 @@ footer {
 
     .projects .wulkan, .projects .skrypty, .projects .psiw, .projects .friends, .projects .cvrptw, 
     .projects .cvrptwO, .projects .aisd, .projects .ask, .projects .others, .projects .clips, .projects .wbudowane,
-    .projects .zbd sub  {
+    .projects .zbd sub, .projects .pong-container  {
         flex-direction: column;
         align-items: center;
         text-align: center;
