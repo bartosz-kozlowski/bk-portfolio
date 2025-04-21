@@ -6,6 +6,7 @@
     <title>Portfolio</title>
     <link rel="icon" href="img/profile2.png" type="image/png">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/css/lightbox.min.css" rel="stylesheet" />
 </head>
 <body>
     <header>
@@ -33,8 +34,8 @@
                         <img src="img/github-mark-white.png" alt="GitHub Logo" class="icon">
                         GitHub
                     </a>
-                    <a href="documents/Bartosz-Kozlowski-CV.pdf" class="button" download>
-                        Pobierz moje CV (Ostatnia aktualizacja 20.02.25)
+                    <a href="documents/Bartosz-Kozlowski-CV_en.pdf" class="button" download>
+                        Pobierz moje CV
                     </a>
                 </div>
         </div>
@@ -44,6 +45,44 @@
     </div>
     <div id="projects" class="projects">
         <h2>PROJEKTY</h2>
+        <div class="php">
+            <h3>FutRank - Oceny zawodników piłkarskich</h3>
+            <img src="img/lista.png" alt="lista_zawodnikow" class="futrank">
+            <img src="img/details.png" alt="szczegoly_zawodnika" class="futrank">
+            <img src="img/logowanie.png" alt="logowanie" class="futrank">
+            <img src="img/ranking.png" alt="ranking" class="futrank">
+            <p>FutRank to internetowa aplikacja stworzona w Laravelu, pozwalająca użytkownikom 
+                oceniać zawodników piłkarskich, przeglądać komentarze i wiele więcej – wszystko w przyjaznym i nowoczesnym interfejsie.
+                Ponadto umożliwia użytkownikom rejestrację, logowanie, weryfikację e-mail, resetowanie hasła oraz zarządzanie kontem. 
+                Kluczową funkcjonalnością aplikacji jest lista zawodników z możliwością oceniania (w skali 1–5 gwiazdek), 
+                komentowania, filtrowania po klubie, pozycji, miejscu urodzenia, nazwie i komentarzach oraz sortowania po 
+                nazwie i średniej ocenie. Portal oferuje zaawansowane wyszukiwanie komentarzy, ranking zawodników na podstawie 
+                ocen, dashboard użytkownika, a także opcję edycji i usuwania własnych ocen. Zaimplementowano również integrację 
+                z API Hugging Face, umożliwiającą analizę sentymentu komentarzy w języku polskim przy użyciu modelu 
+                cardiffnlp/twitter-xlm-roberta-base-sentiment. Projekt wykorzystuje Blade i Tailwind CSS po stronie frontendowej, 
+                a także Alpine.js dla interaktywności. Dzięki middleware Laravel Breeze dostępna jest autoryzacja z pełną ochroną 
+                i wymogiem weryfikacji adresu e-mail. 
+                Aplikacja współpracuje z bazą danych MySQL i umożliwia przeglądanie listy zawodników bez konieczności logowania.</p>
+                <a href="https://github.com/bartosz-kozlowski/FutRank" class="button" target="_blank">
+                    <img src="img/github-mark-white.png" alt="GitHub Logo" class="icon">
+                    Kod źródłowy</a>
+        </div>
+        <div class="rownolegle">
+            <h3>Wygładzanie obrazu metodą cepstralną z użyciem DCT</h3>
+            <h4>Przykładowy input i output dla zdjęcia</h4>
+            <img src="img/oldcar.jpg" alt="input" class="old">
+            <img src="img/wynik_oldcar_omp100.jpg" alt="output" class="old">
+            <p>Celem projektu jest porównanie wydajności algorytmu wygładzania obrazu opartego na dyskretnej transformacie cosinusowej (DCT), 
+                realizowanego w trzech wariantach: sekwencyjnym, z użyciem OpenMP oraz z wykorzystaniem platformy CUDA. Algorytm 
+                polega na przekształceniu każdego wiersza obrazu z dziedziny przestrzennej do częstotliwościowej, odcięciu wysokich 
+                częstotliwości (współczynników DCT), a następnie odwrotnym przekształceniu, co skutkuje efektem wygładzenia obrazu i 
+                redukcji szumów. 
+                Projekt skupia się na analizie czasu wykonania dla każdego wariantu oraz ocenie jakości przetworzonego obrazu. 
+            </p>
+            <a href="https://github.com/bartosz-kozlowski/Metoda-Cepstralna" class="button" target="_blank">
+                <img src="img/github-mark-white.png" alt="GitHub Logo" class="icon">
+                Kod źródłowy</a>
+        </div>
         <div class="wulkan">
             <h3>Symulacja wulkanu</h3>
             <div class="video">
@@ -66,10 +105,8 @@
         </div>
         <div class="wbudowane">
             <h3>Gra Pong dla dwóch graczy - Raspberry Pi</h3>
-            <div class="pong-container">
-                <img src="img/pong_game.jpg" alt="pong game" class="pong">
-                <img src="img/schemat_pong.jpg" alt="pong game schema" class="pong">
-            </div>
+            <img src="img/pong_game.jpg" alt="pong game" class="pong">
+            <img src="img/schemat_pong.jpg" alt="pong game schema" class="pong">
             <p>Celem projektu było stworzenie klasycznej gry "Pong" dla dwóch graczy, która
                 będzie działać na wyświetlaczu LED RGB i umożliwi sterowanie za pomocą
                 potencjometrów. Gra ma być wzbogacona o losowe zdarzenia wpływające na
@@ -173,8 +210,12 @@
             <img src="img/arduino.png" alt="car1" class="vehicle">
             <img src="img/plytkatraw.png" alt="car2" class="vehicle">
             <p>Zrobiłem dwa pojazdy, jeden oparty na Arduino UNO, a drugi na własnej, wytrawionej płytce używając mikrokontrolera ATmega.
-                Projekt własnej płytki nie był prostym zadaniem, lecz sprostałem zadaniu.
+                Projekt własnej płytki nie był prostym zadaniem, lecz sprostałem zadaniu. Film z procesu tworzenia niżej.
             </p>
+            <div class="video2">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/MTFcKtNvyU4?si=aADXZXRApAJTzKmo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
             <a href="https://github.com/bartosz-kozlowski/vehicle" class="button" target="_blank">
                 <img src="img/github-mark-white.png" alt="GitHub Logo" class="icon">
                 Kod źródłowy</a>
@@ -205,5 +246,6 @@
             </ul>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/js/lightbox.min.js"></script>
 </body>
 </html>

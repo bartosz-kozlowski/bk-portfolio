@@ -192,6 +192,13 @@ nav a:hover {
     margin: 20px;
 }
 
+.video2 {
+    display: flex;
+    justify-content: center;
+    margin: 0px 0;
+    margin: 20px;
+}
+
 .contact p {
     margin-top: 10px;
     margin-bottom: 30px;
@@ -241,36 +248,32 @@ nav a:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Zwiększony cień po najechaniu */
 }
 
-.apex {
+.apex, .futrank, .pong {
     width: 49%;
     height: auto;
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animacje */
     border-radius: 10px; /* Zaokrąglone rogi */
 }
 
-.apex:hover {
-    transform: scale(1.05); /* Powiększenie obrazka */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Zwiększony cien po najechaniu */
-}
-
-.pong-container {
-    display: flex; /* Układ obok siebie */
-    gap: 20px; /* Odstęp między obrazkami */
-}
-
-.pong {
-    flex: 1; /* Upewnia się, że wszystkie obrazy zajmują równą szerokość */
-    height: 400px; /* Ustalona wspólna wysokość dla wszystkich obrazków */
-    object-fit: cover; /* Dopasowanie zawartości obrazka */
+.old{
+    width: 39%;
+    height: auto;
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animacje */
     border-radius: 10px; /* Zaokrąglone rogi */
 }
 
-.pong:hover {
-    transform: scale(1.05); /* Powiększenie obrazka */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Zwiększony cień po najechaniu */
+.futrank {
+    height: 300px;
 }
 
+.apex:hover, .futrank:hover, .old:hover, .pong:hover {
+    transform: scale(1.05); /* Powiększenie obrazka */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Zwiększony cien po najechaniu */
+}
+
+.pong {
+    height: 400px;
+}
 
 .ai {
     width: 60%;
@@ -371,22 +374,24 @@ footer {
     }
 
     .image {
-        max-width: 100%;
+        width: 75%;
+        height: auto;
         margin-top: 20px;
     }
 
-    .projects .wulkan, .projects .skrypty, .projects .psiw, .projects .friends, .projects .cvrptw, 
+    .projects .wulkan, .projects .rownolegle, .projects .skrypty, .projects .psiw, .projects .friends, .projects .cvrptw, 
     .projects .cvrptwO, .projects .aisd, .projects .ask, .projects .others, .projects .clips, .projects .wbudowane,
-    .projects .zbd sub, .projects .pong-container  {
+    .projects .zbd sub, .projects .pong-container, .projects .php  {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
 
-    .video iframe, .code, .game, .vehicle, .app, .ai, .pong, .apex {
-        width: 100%;
-        height: auto;
+    .code, .game, .vehicle, .app, .ai, .pong, .apex, .futrank, .old {
+        width: 55% !important;
+        height: auto !important;
     }
+
 
     .text .buttons {
         flex-direction: column;
