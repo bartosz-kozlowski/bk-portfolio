@@ -315,25 +315,30 @@ nav a.active::after {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
 
-.apex, .futrank, .pong {
+.apex, .futrank, .pong, .koktajlovetel, .koktajlovetab {
     width: 49%;
     height: auto;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-radius: 10px;
 }
 
-.old{
+.koktajlovetel{
+    height: 500px;
+    width: auto;
+}
+
+.old {
     width: 39%;
     height: auto;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-radius: 10px;
 }
 
-.futrank {
-    height: 300px;
+.futrank, .koktajlovetab {
+    height: 350px;
 }
 
-.apex:hover, .futrank:hover, .old:hover, .pong:hover {
+.apex:hover, .futrank:hover, .old:hover, .pong:hover, .koktajlovetel:hover, .koktajlovetab:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
@@ -569,6 +574,10 @@ body.light-mode footer {
         padding: 15px 20px;
         position: sticky;
     }
+
+    .text .buttons {
+        justify-content: center;
+    }
     
 
     nav ul {
@@ -595,13 +604,13 @@ body.light-mode footer {
     
     .projects .wulkan, .projects .rownolegle, .projects .skrypty, .projects .psiw, .projects .friends, .projects .cvrptw, 
     .projects .cvrptwO, .projects .aisd, .projects .ask, .projects .others, .projects .clips, .projects .wbudowane,
-    .projects .zbd sub, .projects .pong-container, .projects .php  {
+    .projects .zbd sub, .projects .pong-container, .projects .php, .projects .koktajlove  {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
 
-    .code, .game, .vehicle, .app, .ai, .pong, .apex, .futrank, .old {
+    .code, .game, .vehicle, .app, .ai, .pong, .apex, .futrank, .old, .koktajlovetel, .koktajlovetab {
         width: 90% !important;
         max-width: 400px;
         height: auto !important;
