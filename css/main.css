@@ -151,7 +151,7 @@ nav a:hover {
 
 nav a.active {
   position: relative;
-  color: #ff5733;
+  color: #ff5733 !important;
   font-weight: bold;
 }
 
