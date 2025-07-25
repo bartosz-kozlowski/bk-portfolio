@@ -79,9 +79,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
     const texts = [
-        "Student IV roku Informatyki",
-        "Entuzjasta nowych technologii",
-        "Programista z pasją",
+        "Student IV roku",
+        "Programista",
+        "Informatyk",
         "Miłośnik sportu"
     ];
     const el = document.getElementById("student-status");
