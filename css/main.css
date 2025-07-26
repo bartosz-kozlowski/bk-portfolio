@@ -400,6 +400,8 @@ body.light-mode .icon-dark {
   width: 100%;
   height: auto;
   display: block;
+  object-fit: contain;
+  object-position: center center;
 }
 
 
