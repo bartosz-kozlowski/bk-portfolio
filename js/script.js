@@ -20,7 +20,7 @@
       moreLabel: 'Archiwum', moreHeading: 'Pozostałe projekty',
       readMore: 'Czytaj więcej', readLess: 'Zwiń', source: 'Kod źródłowy',
       contactLabel: 'Kontakt', contactHeading: 'Porozmawiajmy o współpracy',
-      contactText: 'Szukasz kogoś do projektu freelance, masz pytanie albo propozycję pracy? Napisz - odpowiadam szybko.',
+      contactText: 'Szukasz kogoś do projektu freelance, masz pytanie albo propozycję współpracy? Napisz - odpowiadam szybko.',
       phEmail: 'Twój email', phMsg: 'Twoja wiadomość...', send: 'Wyślij wiadomość',
       rights: 'Wszelkie prawa zastrzeżone.'
     },
@@ -35,7 +35,7 @@
       moreLabel: 'Archive', moreHeading: 'More projects',
       readMore: 'Read more', readLess: 'Show less', source: 'Source code',
       contactLabel: 'Contact', contactHeading: 'Let\u2019s work together',
-      contactText: 'Looking for someone for a freelance project, have a question or a job offer? Drop me a line - I reply fast.',
+      contactText: 'Looking for someone for a freelance project, have a question or a collaboration proposal? Drop me a line - I reply fast.',
       phEmail: 'Your email', phMsg: 'Your message...', send: 'Send message',
       rights: 'All rights reserved.'
     }
